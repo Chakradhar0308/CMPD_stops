@@ -7,6 +7,7 @@ def load_data(csv):
     df = pd.read_csv(csv)
     return df
 
+st.write('Yash Pradhan was here!')
 stops = load_data("data\Officer_Traffic_Stops.csv")
 
 age_bar = alt.Chart(stops).mark_bar().encode(
